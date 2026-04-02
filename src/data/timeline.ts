@@ -4,14 +4,14 @@ export const timeline: TimelineEntry[] = [
   {
     year: "2008",
     role: "Jr. Software Engineer",
-    company: "Early Career",
+    company: "Comtech Solutions",
     description:
       "Wrote code. Broke things. Fixed them. Built the foundation.",
   },
   {
     year: "2010",
     role: "Lead Developer",
-    company: "iRely",
+    company: "Comtech Solutions",
     description:
       "Led teams, shipped features, scaled systems. Started thinking beyond the code.",
   },
