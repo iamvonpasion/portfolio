@@ -100,22 +100,6 @@ export const projects: Project[] = [
     tags: ["Azure", "SQL Server", "VMSS", "CDN"],
   },
   {
-    id: "session-recording",
-    title: "Session Recording Platform",
-    subtitle: "Full Session Replay. Built In-House.",
-    description:
-      "Built a session recording and replay platform from scratch — capture every user interaction, replay it frame by frame, pinpoint exactly where things break. Desktop recording via Electron, browser capture via Chrome Extension. Shipped with Claude Code.",
-    challenge:
-      "LogRocket, OpenReplay — none of them fit. Needed full control over what gets recorded, how it's stored, and how it integrates with our platform.",
-    keyDecisions: [
-      "Electron for desktop session capture — full fidelity recording",
-      "Chrome Extension for lightweight browser-based capture",
-      "End-to-end with Claude Code — AI-assisted development, not just a buzzword",
-    ],
-    impact: "Support and QA see exactly what the user saw. No more 'can you reproduce that?'",
-    tags: ["TypeScript", "React", "Electron", "Chrome Extension", "C#", "Claude Code"],
-  },
-  {
     id: "liquibase-workflow",
     title: "Schema Migration at Scale",
     subtitle: "4K+ Tables. Seconds, Not Hours.",
@@ -132,8 +116,24 @@ export const projects: Project[] = [
     tags: ["Liquibase", "SQL Server", "PostgreSQL", "CI/CD"],
   },
   {
+    id: "session-recording",
+    title: "Session Recording Tool",
+    subtitle: "Full Session Replay. Built In-House.",
+    description:
+      "Built a session recording and replay platform from scratch — capture every user interaction, replay it frame by frame, pinpoint exactly where things break. Desktop recording via Electron, browser capture via Chrome Extension. Shipped with Claude Code.",
+    challenge:
+      "LogRocket, OpenReplay — none of them fit. Needed full control over what gets recorded, how it's stored, and how it integrates with our platform.",
+    keyDecisions: [
+      "Electron for desktop session capture — full fidelity recording",
+      "Chrome Extension for lightweight browser-based capture",
+      "End-to-end with Claude Code — AI-assisted development, not just a buzzword",
+    ],
+    impact: "Support and QA see exactly what the user saw. No more 'can you reproduce that?'",
+    tags: ["TypeScript", "React", "Electron", "Chrome Extension", "C#", "Claude Code"],
+  },
+  {
     id: "deployment-platform",
-    title: "Internal Deployment Platform",
+    title: "Internal Deployment Tool",
     subtitle: "Every Deploy. Tracked. Auditable. Repeatable.",
     description:
       "Spearheaded an internal deployment tool that pushes build versions to customer servers — with logging, progress tracking, history, audit trail, role management, change tracking per build, comparison, and grouping.",
