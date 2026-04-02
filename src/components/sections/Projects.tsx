@@ -17,10 +17,10 @@ function ProjectRow({
 }) {
   return (
     <motion.button
-      initial={{ opacity: 0, y: 20 }}
+      initial={{ opacity: 0, y: 12 }}
       whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, amount: 0.3 }}
-      transition={{ duration: 0.4, delay: index * 0.05 }}
+      viewport={{ once: true, amount: 0.1 }}
+      transition={{ duration: 0.3, delay: index * 0.04 }}
       onClick={onClick}
       className="group text-left w-full p-5 rounded-xl bg-bg-surface border border-border-subtle hover:border-accent-primary/40 hover:shadow-[0_0_30px_rgba(99,102,241,0.1)] transition-all duration-300"
     >

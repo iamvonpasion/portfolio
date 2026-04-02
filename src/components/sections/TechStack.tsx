@@ -7,7 +7,7 @@ const stack = {
   Languages: ["C#", "TypeScript", "Python", "SQL"],
   "Backend & Frontend": ["ASP.NET Web API", "React", "Angular", "Next.js", "Sencha", "SignalR"],
   Mobile: ["React Native", "Ionic"],
-  "Cloud & Infra": ["Azure", "Azure VMSS", "Microsoft Entra ID", "Docker", "Kubernetes", "PostgreSQL", "SQL Server", "CDN", "Load Balancing", "Read Replicas"],
+  "Cloud & Infra": ["Azure", "Azure VMSS", "Azure Service Bus", "Microsoft Entra ID", "Docker", "Kubernetes", "PostgreSQL", "SQL Server", "CDN", "Load Balancing", "Read Replicas"],
   "Data & Schema": ["Liquibase", "SSDT"],
   "AI & Tooling": ["Claude Code", "Cursor", "MCP Servers", "Claude Skills", "Azure AI Document Intelligence", "OpenAI API", "LiteLLM", "LangChain", "Hugging Face", "Groq", "OpenRouter", "Gradio"],
   "Observability & Analytics": ["Power BI", "Grafana", "SigNoz", "LogRocket", "OpenTelemetry"],

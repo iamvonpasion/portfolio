@@ -48,7 +48,7 @@ export const projects: Project[] = [
       "Pragmatic architecture — delivered within current constraints, not an excuse to rebuild",
     ],
     impact: "40+ companies, single database, bulletproof isolation. Shipped on deadline.",
-    tags: ["C#", "SQL Server", "Architecture", "Security"],
+    tags: ["C#", "SQL Server", "Azure Service Bus", "Architecture", "Security"],
   },
   {
     id: "intelligent-doc-processing",
@@ -63,8 +63,8 @@ export const projects: Project[] = [
       "Field mapping engine to translate extracted data into ERP transactions",
       "End-to-end automation — document in, voucher out, no manual step",
     ],
-    impact: "Documents become transactions. No manual entry. AI doing the work humans shouldn't.",
-    tags: ["Azure AI Document Intelligence", "AI", "C#", "TypeScript"],
+    impact: "Zero manual entry. Documents in, transactions out. Automated end to end.",
+    tags: ["Azure AI Document Intelligence", "AI", "C#"],
   },
   {
     id: "claude-workflow-plugin",
