@@ -65,7 +65,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 8 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="text-accent-cyan font-mono text-sm mb-6 tracking-wider"
+          className="text-accent-cyan font-mono text-sm md:text-lg mb-6 tracking-wider"
         >
           Solutions Architect &middot; Tech Consultant
         </motion.p>

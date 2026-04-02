@@ -14,7 +14,7 @@ export default function SectionHeading({
   id,
 }: SectionHeadingProps) {
   return (
-    <div className="mb-12 md:mb-16">
+    <div className="mb-6 md:mb-16">
       <motion.h2
         id={id}
         initial={{ opacity: 0, y: 20 }}

@@ -26,7 +26,7 @@ export default function Philosophy() {
     <section
       id="philosophy"
       aria-labelledby="philosophy-heading"
-      className="py-24 px-6"
+      className="py-10 md:py-24 px-6"
     >
       <div className="max-w-3xl mx-auto">
         <SectionHeading title="Principles" id="philosophy-heading" />

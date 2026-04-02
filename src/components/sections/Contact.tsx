@@ -9,7 +9,7 @@ export default function Contact() {
     <section
       id="contact"
       aria-labelledby="contact-heading"
-      className="py-24 px-6"
+      className="py-10 md:py-24 px-6"
     >
       <div className="max-w-3xl mx-auto">
         <motion.h2

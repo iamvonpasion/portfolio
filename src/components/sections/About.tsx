@@ -9,7 +9,7 @@ import SectionHeading from "../ui/SectionHeading";
 
 export default function About() {
   return (
-    <section id="about" aria-labelledby="about-heading" className="py-24 px-6">
+    <section id="about" aria-labelledby="about-heading" className="py-10 md:py-24 px-6">
       <div className="max-w-3xl mx-auto">
         <SectionHeading title="About" id="about-heading" />
 

@@ -9,7 +9,7 @@ export default function Timeline() {
     <section
       id="timeline"
       aria-labelledby="timeline-heading"
-      className="py-24 px-6"
+      className="py-10 md:py-24 px-6"
     >
       <div className="max-w-3xl mx-auto">
         <SectionHeading title="Journey" id="timeline-heading" />
