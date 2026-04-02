@@ -29,7 +29,7 @@ export default function About() {
               <div>
                 <p className="text-xl font-bold text-text-heading">Von Pasion</p>
                 <p className="text-sm text-accent-primary">Solutions Architect &middot; Tech Consultant &middot; Builder</p>
-                <p className="text-xs text-text-secondary mt-1">Philippines</p>
+                <p className="text-xs text-text-secondary mt-1">Makati, Philippines</p>
               </div>
               <div className="flex gap-3">
                 <SocialIcon
@@ -62,7 +62,7 @@ export default function About() {
             <p className="text-text-secondary leading-relaxed">
               Today I focus on enterprise architecture and AI-powered development
               — agentic workflows, automated pipelines, systems that think.
-              I also mentor engineers, do business analysis, and drive product
+              I mentor engineers, solve business problems, and drive product
               decisions. Clarity beats cleverness. Always.
             </p>
           </RevealOnScroll>

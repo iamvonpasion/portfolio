@@ -90,8 +90,7 @@ export default function Hero() {
           transition={{ duration: 0.5, delay: 0.4 }}
           className="text-base md:text-lg text-text-secondary max-w-lg mb-10 leading-relaxed"
         >
-          I architect systems, solve hard problems, and ship with AI.
-          {" "}{yearsOfExperience()}+ years of solving complex business problems.
+          I architect, solve, and ship with AI. {yearsOfExperience()}+ years in enterprise software.
         </motion.p>
 
         <motion.div
