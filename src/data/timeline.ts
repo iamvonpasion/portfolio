@@ -23,7 +23,7 @@ export const timeline: TimelineEntry[] = [
       "Shifted from building systems to designing them — integrating architecture, business analysis, and product decisions.",
   },
   {
-    year: "2018",
+    year: "2017",
     role: "Sr. Solutions Architect",
     company: "iRely",
     description:
