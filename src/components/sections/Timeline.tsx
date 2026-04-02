@@ -18,10 +18,10 @@ export default function Timeline() {
           {timeline.map((entry, i) => (
             <motion.div
               key={entry.year}
-              initial={{ opacity: 0, x: -16 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true, amount: 0.3 }}
-              transition={{ duration: 0.4, delay: i * 0.08 }}
+              initial={{ opacity: 0, y: 6 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.05 }}
+              transition={{ duration: 0.5, ease: "easeOut" as const, delay: i * 0.03 }}
               className="relative pb-10 last:pb-0"
             >
               {/* Dot */}

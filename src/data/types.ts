@@ -2,6 +2,7 @@ export interface Project {
   id: string;
   title: string;
   subtitle: string;
+  subtitleDesktop?: string;
   description: string;
   challenge: string;
   keyDecisions: string[];

@@ -68,8 +68,9 @@ export const projects: Project[] = [
   },
   {
     id: "claude-workflow-plugin",
-    title: "Dev Workflow Plugin for Claude Code",
-    subtitle: "Spec → Design → Eng → Review → Ship.",
+    title: "Dev Workflow for Claude Code",
+    subtitle: "Spec → Eng → Review → Ship.",
+    subtitleDesktop: "Spec → Design → Eng → Review → QA → Ship → Retro.",
     description:
       "Open-source plugin that turns Claude Code into a structured dev workflow. 13 skills, auto-activating rules, recipe chains. One command to spec, design, build, review, and ship.",
     challenge:

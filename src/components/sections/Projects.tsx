@@ -17,10 +17,10 @@ function ProjectRow({
 }) {
   return (
     <motion.button
-      initial={{ opacity: 0, y: 12 }}
+      initial={{ opacity: 0, y: 6 }}
       whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, amount: 0.1 }}
-      transition={{ duration: 0.3, delay: index * 0.04 }}
+      viewport={{ once: true, amount: 0.05 }}
+      transition={{ duration: 0.5, ease: "easeOut" as const, delay: index * 0.03 }}
       onClick={onClick}
       className="group text-left w-full p-5 rounded-xl bg-bg-surface border border-border-subtle hover:border-accent-primary/40 hover:shadow-[0_0_30px_rgba(99,102,241,0.1)] transition-all duration-300"
     >
@@ -30,7 +30,14 @@ function ProjectRow({
             {project.title}
           </h3>
           <p className="text-sm text-text-secondary mt-0.5">
-            {project.subtitle}
+            {project.subtitleDesktop ? (
+              <>
+                <span className="md:hidden">{project.subtitle}</span>
+                <span className="hidden md:inline">{project.subtitleDesktop}</span>
+              </>
+            ) : (
+              project.subtitle
+            )}
           </p>
         </div>
         <svg
@@ -113,7 +120,9 @@ function ProjectModal({
         <h2 id="modal-title" className="text-2xl font-bold text-text-heading mb-1">
           {project.title}
         </h2>
-        <p className="text-accent-primary mb-6">{project.subtitle}</p>
+        <p className="text-accent-primary mb-6">
+          {project.subtitleDesktop || project.subtitle}
+        </p>
 
         <div className="space-y-6">
           <div>
