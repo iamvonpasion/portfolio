@@ -7,17 +7,12 @@ const stack = {
   Languages: ["C#", "TypeScript", "Python", "SQL"],
   "Backend & Frontend": ["ASP.NET Web API", "React", "Angular", "Next.js", "Sencha", "SignalR"],
   Mobile: ["React Native", "Ionic"],
-  "Cloud & Infra": ["Azure", "Azure VMSS", "Azure Service Bus", "Microsoft Entra ID", "Docker", "Kubernetes", "PostgreSQL", "SQL Server", "CDN", "Load Balancing", "Read Replicas"],
+  "Cloud & Infra": ["Azure", "Docker", "Kubernetes", "PostgreSQL", "SQL Server"],
   "Data & Schema": ["Liquibase", "SSDT"],
-  "AI & Tooling": ["Claude Code", "Cursor", "MCP Servers", "Claude Skills", "Azure AI Document Intelligence", "OpenAI API", "LiteLLM", "LangChain", "Hugging Face", "Groq", "OpenRouter", "Gradio"],
-  "Observability & Analytics": ["Power BI", "Grafana", "SigNoz", "LogRocket", "OpenTelemetry"],
-  Testing: ["Unit Testing", "Integration Testing", "Playwright"],
-  "Tools & Collaboration": ["Git", "JIRA", "Confluence", "Bitbucket", "Electron", "Chrome Extensions"],
-  "DevOps & CI/CD": ["GitHub Actions", "Azure DevOps", "CI/CD Pipelines"],
-  Architecture: [
-    "Pragmatic Architecture",
-    "Simplicity-First Design",
-  ],
+  "AI & Tooling": ["Claude Code", "Cursor", "MCP Servers", "OpenAI API", "LiteLLM", "LangChain", "Hugging Face", "Gradio"],
+  "Observability & Analytics": ["Power BI", "SigNoz", "LogRocket", "OpenTelemetry"],
+  "Tools & Collaboration": ["Git", "JIRA", "Confluence", "Bitbucket", "Electron"],
+  "DevOps & CI/CD": ["GitHub Actions", "Azure DevOps"],
 };
 
 export default function TechStack() {

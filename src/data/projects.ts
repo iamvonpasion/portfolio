@@ -41,14 +41,14 @@ export const projects: Project[] = [
     description:
       "Designed multi-company support on a single database with Master Data Management — global and company-specific fields, shared entities across companies. 11M-line codebase. Tight deadline. Shipped.",
     challenge:
-      "40+ companies needed to run on a single database with shared master data. 11M lines of code. No rewrite on the table. Deadline was real.",
+      "40+ companies. One database. Shared master data. 11M lines of code — and rewriting wasn't an option.",
     keyDecisions: [
       "Role-level security for data isolation — rock solid, zero filters scattered across 11M lines of code",
       "MDM with dual-layer fields: global (name, address) and company-specific (credit limit) within existing schema",
-      "Pragmatic architecture — delivered within current constraints, not an excuse to rebuild",
+      "Event-driven sync — one update reaches all companies instantly, no manual propagation",
     ],
     impact: "40+ companies, single database, bulletproof isolation. Shipped on deadline.",
-    tags: ["C#", "SQL Server", "Azure Service Bus", "Architecture", "Security"],
+    tags: ["C#", "SQL Server", "Security"],
   },
   {
     id: "intelligent-doc-processing",
@@ -61,10 +61,10 @@ export const projects: Project[] = [
     keyDecisions: [
       "Azure AI Document Intelligence trained on real business documents",
       "Field mapping engine to translate extracted data into ERP transactions",
-      "End-to-end automation — document in, voucher out, no manual step",
+      "End-to-end automation — document goes in, transaction comes out",
     ],
     impact: "Zero manual entry. Documents in, transactions out. Automated end to end.",
-    tags: ["Azure AI Document Intelligence", "AI", "C#"],
+    tags: ["C#"],
   },
   {
     id: "claude-workflow-plugin",
@@ -76,12 +76,12 @@ export const projects: Project[] = [
     challenge:
       "Claude Code is powerful but unstructured. No guardrails, no process, no repeatable quality gates between idea and production.",
     keyDecisions: [
-      "One skill per phase — clear boundaries, no overlap",
-      "Zero-config rules that activate by file path",
-      "Composable recipe chains: feature, bugfix, release, swarm",
+      "Structured phases — spec, build, review, ship",
+      "AI with guardrails — Claude writes code, the workflow enforces quality",
+      "Ship fast, stay confident — structure handles the rest",
     ],
-    impact: "Idea to production in one workflow. Open source. Already in use.",
-    tags: ["Claude Code", "Claude Skills", "MCP Servers", "TypeScript", "Open Source"],
+    impact: "Idea to production in one workflow. Already in use.",
+    tags: ["Claude Code", "Skills", "Markdown"],
   },
   {
     id: "cloud-infra",
@@ -90,30 +90,31 @@ export const projects: Project[] = [
     description:
       "Architected the cloud infrastructure for the iRely platform — read replicas for offloading reads and reporting, load balancing via SQL Server and Azure VMSS, and CDN. Built to scale and stay up.",
     challenge:
-      "Production database handling both transactional workloads and heavy reporting. No failover strategy. Scaling meant throwing more hardware at it.",
+      "One database doing everything — transactions, reporting, caching. No separation, no failover. Scaling meant bigger hardware, not better architecture.",
     keyDecisions: [
-      "Read replicas to reroute read operations and reporting off the primary database",
-      "Azure VMSS with SQL Server load balancing for horizontal scale",
-      "CDN baked into the architecture from the start",
+      "Read replicas — offload reporting and reads, keep the primary database focused",
+      "Load balancing — horizontal scale that grows with demand",
+      "Caching at every layer — fewer round trips, faster responses",
     ],
-    impact: "Reads offloaded. Reporting no longer kills production. Infrastructure that actually scales.",
-    tags: ["Azure", "SQL Server", "VMSS", "CDN"],
+    impact: "Production stays fast under load. Reporting runs without impact. Scales out, not up.",
+    tags: ["Azure", "SQL Server", "Cache"],
   },
   {
     id: "liquibase-workflow",
     title: "Schema Migration at Scale",
-    subtitle: "4K+ Tables. Seconds, Not Hours.",
+    subtitle: "12K+ Objects. Seconds, Not Hours.",
+    subtitleDesktop: "12K+ Database Objects. Seconds, Not Hours.",
     description:
       "Architected a custom Liquibase workflow for a massive schema — 4K+ tables, 3K+ views, 4K+ stored procedures, 1K+ functions. Migrations that took 4 hours now run in seconds to minutes.",
     challenge:
-      "SSDT couldn't handle 12K+ database objects. Migrations were a 4-hour bottleneck that blocked every team — IT, devs, QA, product, implementation.",
+      "12K+ database objects. Existing tools broke under the weight. Migrations blocked the entire org for hours.",
     keyDecisions: [
-      "Custom Liquibase workflow architected for our specific scale and needs",
-      "Replaced SSDT which broke under the weight of 12K+ objects",
-      "Liquibase certified — did the homework to get it right",
+      "Custom migration workflow — built for massive schemas from the ground up",
+      "Incremental by default — only what changed gets applied, not the full schema",
+      "Runs in seconds — what used to block teams for hours now just happens",
     ],
-    impact: "4-hour migrations → seconds to minutes. Unblocked every team across the org.",
-    tags: ["Liquibase", "SQL Server", "PostgreSQL", "CI/CD"],
+    impact: "Hours to seconds. Every team unblocked.",
+    tags: ["Liquibase", "SQL Server", "PostgreSQL"],
   },
   {
     id: "session-recording",
@@ -122,14 +123,14 @@ export const projects: Project[] = [
     description:
       "Built a session recording and replay platform from scratch — capture every user interaction, replay it frame by frame, pinpoint exactly where things break. Desktop recording via Electron, browser capture via Chrome Extension. Shipped with Claude Code.",
     challenge:
-      "LogRocket, OpenReplay — none of them fit. Needed full control over what gets recorded, how it's stored, and how it integrates with our platform.",
+      "Users hit issues no one could replicate. Without seeing the actual session, every bug report was a guessing game.",
     keyDecisions: [
-      "Electron for desktop session capture — full fidelity recording",
-      "Chrome Extension for lightweight browser-based capture",
-      "End-to-end with Claude Code — AI-assisted development, not just a buzzword",
+      "Everything support needs in one place — session, console, network, no context switching",
+      "Full session replay — every click, every state change, frame by frame",
+      "Console logs, network requests, and DOM snapshots captured alongside the session",
     ],
-    impact: "Support and QA see exactly what the user saw. No more 'can you reproduce that?'",
-    tags: ["TypeScript", "React", "Electron", "Chrome Extension", "C#", "Claude Code"],
+    impact: "Replay the session, find the bug. Case closed.",
+    tags: ["TypeScript", "React", "Electron", "C#"],
   },
   {
     id: "deployment-platform",

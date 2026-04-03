@@ -121,7 +121,12 @@ function ProjectModal({
           {project.title}
         </h2>
         <p className="text-accent-primary mb-6">
-          {project.subtitleDesktop || project.subtitle}
+          {project.subtitleDesktop ? (
+              <>
+                <span className="md:hidden">{project.subtitle}</span>
+                <span className="hidden md:inline">{project.subtitleDesktop}</span>
+              </>
+            ) : project.subtitle}
         </p>
 
         <div className="space-y-6">
